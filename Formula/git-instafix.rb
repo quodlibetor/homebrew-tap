@@ -1,21 +1,21 @@
 class GitInstafix < Formula
   desc "Apply staged git changes to an ancestor git commit.
 "
-  version "0.2.0"
+  version "0.2.1"
   on_macos do
     on_arm do
-      url "https://github.com/quodlibetor/git-instafix/releases/download/v0.2.0/git-instafix-aarch64-apple-darwin.tar.xz"
-      sha256 "b8680b2324a424e271830206a50781b4a5fd49946867ea2cefa1fd0990a98140"
+      url "https://github.com/quodlibetor/git-instafix/releases/download/v0.2.1/git-instafix-aarch64-apple-darwin.tar.xz"
+      sha256 "d7a99ad6e651d900b536cfc881993f9ac53cae4699f99bf5c99143be098bd417"
     end
     on_intel do
-      url "https://github.com/quodlibetor/git-instafix/releases/download/v0.2.0/git-instafix-x86_64-apple-darwin.tar.xz"
-      sha256 "9ce459edcfc09c97119b09fa33490525251c8c077da0f13185d884dca8956e15"
+      url "https://github.com/quodlibetor/git-instafix/releases/download/v0.2.1/git-instafix-x86_64-apple-darwin.tar.xz"
+      sha256 "7b437e72d585974ebbd84b291abdcace324ae8ef93d60dca3a2c755f71dd3fcf"
     end
   end
   on_linux do
     on_intel do
-      url "https://github.com/quodlibetor/git-instafix/releases/download/v0.2.0/git-instafix-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "b5ab34932a72e02dc33844a411752add4297c13795f4f2e7abe55507a99f1ae8"
+      url "https://github.com/quodlibetor/git-instafix/releases/download/v0.2.1/git-instafix-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "0942f2fed887b8543ddc97cdbbebfb7b3b94dc6294a0676acb61dc3f819dfdca"
     end
   end
 
