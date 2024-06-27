@@ -2,21 +2,21 @@ class GitInstafix < Formula
   desc "Apply staged git changes to an ancestor git commit.
 "
   homepage "https://github.com/quodlibetor/git-instafix"
-  version "0.2.5"
+  version "0.2.6"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/quodlibetor/git-instafix/releases/download/v0.2.5/git-instafix-aarch64-apple-darwin.tar.xz"
-      sha256 "2384c330762a11c2f6151714a829a51f5f97162b3b69805d7bdf705b43acd492"
+      url "https://github.com/quodlibetor/git-instafix/releases/download/v0.2.6/git-instafix-aarch64-apple-darwin.tar.xz"
+      sha256 "744d0c4dd2386a29cd6e2f6fa5085da13c8a57bd466ad177550142bef28dd1b8"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/quodlibetor/git-instafix/releases/download/v0.2.5/git-instafix-x86_64-apple-darwin.tar.xz"
-      sha256 "0baa6ffd06e73dce429b8620fdbe9b300b47676e9698226cd62b393f592a0a17"
+      url "https://github.com/quodlibetor/git-instafix/releases/download/v0.2.6/git-instafix-x86_64-apple-darwin.tar.xz"
+      sha256 "c9cadf284fc4c260107d11e7522c458563cfb737409bbf501d93de5ccc6c0581"
     end
   end
   if OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/quodlibetor/git-instafix/releases/download/v0.2.5/git-instafix-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "204f7298ee8aa8ed6f09d84aa96a4587533868298147ee21a383c6640054b848"
+      url "https://github.com/quodlibetor/git-instafix/releases/download/v0.2.6/git-instafix-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "a519e55f692dc890ee3684f5913ff0fa1e1f4bf9b5cad05784695fa1a58090f7"
     end
   end
 
