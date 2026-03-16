@@ -1,25 +1,25 @@
 class S3glob < Formula
   desc "A fast aws s3 ls and downloader that supports glob patterns"
   homepage "https://github.com/quodlibetor/s3glob"
-  version "0.4.12"
+  version "0.4.13"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/quodlibetor/s3glob/releases/download/v0.4.12/s3glob-aarch64-apple-darwin.tar.xz"
-      sha256 "43caa07eaa71cf056cf1615febf1cd5d9ecf32b189090d8dd8570b73ebabf65e"
+      url "https://github.com/quodlibetor/s3glob/releases/download/v0.4.13/s3glob-aarch64-apple-darwin.tar.xz"
+      sha256 "83dd2b0b58d174b5ae1eb233d096aaff0dd13f445ad8636a277a9b477d8751f1"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/quodlibetor/s3glob/releases/download/v0.4.12/s3glob-x86_64-apple-darwin.tar.xz"
-      sha256 "a3b68fb1599bf06fd62028e77ba362e3dd962b8a600766d7475fcff47a2ae0b7"
+      url "https://github.com/quodlibetor/s3glob/releases/download/v0.4.13/s3glob-x86_64-apple-darwin.tar.xz"
+      sha256 "fe22b2bc966d3931a813ae9293bc90fb6a685d43a9a43175beb9c53dd83f5802"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/quodlibetor/s3glob/releases/download/v0.4.12/s3glob-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "f096947278af30d18070f508f7b3deda4d1b8e58bbfe0d001b9e8a8e449c091d"
+      url "https://github.com/quodlibetor/s3glob/releases/download/v0.4.13/s3glob-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "f90fe51926d3c65f84be8f91a61e73434318389766129bc589d8b15d3e3b292b"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/quodlibetor/s3glob/releases/download/v0.4.12/s3glob-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "9b49a0b3f8b1c20b9673fde2705441620e0ff551fcd4abc3f26329c048448a54"
+      url "https://github.com/quodlibetor/s3glob/releases/download/v0.4.13/s3glob-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "b20d2bc155af5bde09cde1f3e655a5c7f7903e0a865af93d9d6b3310f6f51060"
     end
   end
   license "MIT, APACHE-2.0"
