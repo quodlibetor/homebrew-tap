@@ -1,7 +1,7 @@
 class GitStack < Formula
   desc "Helpers for working with stacked PR branches (rebase, push, log)"
   homepage "https://github.com/quodlibetor/dotfiles"
-  head "https://github.com/quodlibetor/dotfiles.git", branch: "master"
+  head "https://github.com/quodlibetor/dotfiles.git", branch: "main"
   license "MIT"
 
   def install
