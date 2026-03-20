@@ -1,25 +1,25 @@
 class VcsStatusDaemon < Formula
   desc "A tool that caches VCS (jj/git) status so your shell prompt can be fast"
   homepage "https://github.com/quodlibetor/vcs-status-daemon"
-  version "0.0.6"
+  version "0.0.7"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/quodlibetor/vcs-status-daemon/releases/download/v0.0.6/vcs-status-daemon-aarch64-apple-darwin.tar.xz"
-      sha256 "dbc6356f70a7406fb79bb60d5fb4e2ab26452b6d922095025e04a86d6c36888f"
+      url "https://github.com/quodlibetor/vcs-status-daemon/releases/download/v0.0.7/vcs-status-daemon-aarch64-apple-darwin.tar.xz"
+      sha256 "c5020ebc607ef62f13884050e64f6487f2a4b1032790ba2228e606302e66b096"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/quodlibetor/vcs-status-daemon/releases/download/v0.0.6/vcs-status-daemon-x86_64-apple-darwin.tar.xz"
-      sha256 "bdf9b6974c603107ebd0480a08e68b25bdda965cc77532cf8b8c4188f7193810"
+      url "https://github.com/quodlibetor/vcs-status-daemon/releases/download/v0.0.7/vcs-status-daemon-x86_64-apple-darwin.tar.xz"
+      sha256 "043b177b93d59ea007d8cf15da250fc869e8b79f49a32508741c599781cdae2f"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/quodlibetor/vcs-status-daemon/releases/download/v0.0.6/vcs-status-daemon-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "f45bd5f325cd75173780dab1a647f1cde01bbe1eec70b1167fab644cdf36db45"
+      url "https://github.com/quodlibetor/vcs-status-daemon/releases/download/v0.0.7/vcs-status-daemon-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "0110ed41d7990ff6727a31698e592d3fe6810dae19436fd83e3b1654ebadb5d6"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/quodlibetor/vcs-status-daemon/releases/download/v0.0.6/vcs-status-daemon-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "f885c9a21fb14b210607fe46c1d671c9d78ebf3fbc7a6db25805071bee86184c"
+      url "https://github.com/quodlibetor/vcs-status-daemon/releases/download/v0.0.7/vcs-status-daemon-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "ce1bb916e0182d60471ee27af35df87273a48953d76187dd86a08b305af60e7a"
     end
   end
 
