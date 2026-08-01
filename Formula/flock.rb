@@ -1,25 +1,25 @@
 class Flock < Formula
   desc "Run a command while holding an atomic, OS-managed, death-safe file lock"
   homepage "https://github.com/quodlibetor/flock"
-  version "0.0.3"
+  version "0.0.4"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/quodlibetor/flock/releases/download/v0.0.3/flock-aarch64-apple-darwin.tar.xz"
-      sha256 "e3bccf8d130a8665cf54d8129f8969158e7d495f63f89fd2c67b7d7ba8c52f78"
+      url "https://github.com/quodlibetor/flock/releases/download/v0.0.4/flock-aarch64-apple-darwin.tar.xz"
+      sha256 "0b72370ad2d4e36d4d56231c007102e5b9b2f1f67046a5774c71e6fbfab0aebf"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/quodlibetor/flock/releases/download/v0.0.3/flock-x86_64-apple-darwin.tar.xz"
-      sha256 "ff19fb6d93d1b33adfd3f855d77e216ad9159b76f058f0a0abb5ddb43c1c9919"
+      url "https://github.com/quodlibetor/flock/releases/download/v0.0.4/flock-x86_64-apple-darwin.tar.xz"
+      sha256 "d85d3fd4e5791de9c86e13b4e9c0a68114330e586f616a8bdbf399e26eb5283c"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/quodlibetor/flock/releases/download/v0.0.3/flock-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "bb79cc1534ed23bdeb7cd8e42504135b82344e86a41168b14c586545996f07bf"
+      url "https://github.com/quodlibetor/flock/releases/download/v0.0.4/flock-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "1246deab4073b83b7e442f5c31d7d8653664053da58cf1a85965991a54721bcc"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/quodlibetor/flock/releases/download/v0.0.3/flock-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "4f0678bb957c380d9fb48345bd5d6f0a2f02fa1808785e3b3baa80ff5c298123"
+      url "https://github.com/quodlibetor/flock/releases/download/v0.0.4/flock-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "c33f001a95b9acc56b200dfa7ae0332caaf5d372f92f76ead9bdb1aa057075ef"
     end
   end
   license "MIT, APACHE-2.0"
