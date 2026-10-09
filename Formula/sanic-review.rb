@@ -1,25 +1,25 @@
 class SanicReview < Formula
   desc "Human-guided LLM review of GitHub PRs."
   homepage "https://github.com/quodlibetor/sanic-review"
-  version "0.0.1"
+  version "0.0.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/quodlibetor/sanic-review/releases/download/v0.0.1/sanic-review-aarch64-apple-darwin.tar.xz"
-      sha256 "082d4f1e95b4af5006826d72ba3f846865a408ee3bc7e6c78833b6af6a6d8f7e"
+      url "https://github.com/quodlibetor/sanic-review/releases/download/v0.0.2/sanic-review-aarch64-apple-darwin.tar.xz"
+      sha256 "7d8814d85d7dfb6a8fca892448501306579cab88020eda16a19c841c1be170b6"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/quodlibetor/sanic-review/releases/download/v0.0.1/sanic-review-x86_64-apple-darwin.tar.xz"
-      sha256 "decf710746ec5f942a74c472156659e48c46455c710cf201f8c53852e2008b9f"
+      url "https://github.com/quodlibetor/sanic-review/releases/download/v0.0.2/sanic-review-x86_64-apple-darwin.tar.xz"
+      sha256 "098e1e7aaece3079423fc0ee243a3c56c48a62040e85bdc9011418b50fee0165"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/quodlibetor/sanic-review/releases/download/v0.0.1/sanic-review-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "f5de2c9d700aaa1ecc13d3dd1c0ccf754d8aa401707c511c2e232fe7d290e09a"
+      url "https://github.com/quodlibetor/sanic-review/releases/download/v0.0.2/sanic-review-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "67fca92a2b0a7cba70a2fa14ffba89abc0e54dcfe80761c7f53144177a257b2e"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/quodlibetor/sanic-review/releases/download/v0.0.1/sanic-review-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "6ec62f71effd7fe3eab710a65337c105a55c1a73cce62ffce9e15f27c8e82cb9"
+      url "https://github.com/quodlibetor/sanic-review/releases/download/v0.0.2/sanic-review-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "a39780f75fa3d0a9c58b7d51652eeb4136566d2d163c427f68ac8e14e165773b"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
