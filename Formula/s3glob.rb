@@ -1,25 +1,25 @@
 class S3glob < Formula
   desc "A fast aws s3 ls and downloader that supports glob patterns"
   homepage "https://github.com/quodlibetor/s3glob"
-  version "0.4.17"
+  version "0.4.18"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/quodlibetor/s3glob/releases/download/v0.4.17/s3glob-aarch64-apple-darwin.tar.xz"
-      sha256 "ba2e16bcb1d333965672192e3358b4beb941a558f3942ac46559344b81a05ffa"
+      url "https://github.com/quodlibetor/s3glob/releases/download/v0.4.18/s3glob-aarch64-apple-darwin.tar.xz"
+      sha256 "544488a49fb2a30a129f941ff1aecf225da0bf587657fe0f4d8eb048692f1915"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/quodlibetor/s3glob/releases/download/v0.4.17/s3glob-x86_64-apple-darwin.tar.xz"
-      sha256 "a427c5a187837300ba2fc5c13c82df9abc9b0a86cec7414d7c6a0bee45159f50"
+      url "https://github.com/quodlibetor/s3glob/releases/download/v0.4.18/s3glob-x86_64-apple-darwin.tar.xz"
+      sha256 "a27d23f42561ab65d403c29339cbb5e2130fb7aca9901d138f3f14949406496b"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/quodlibetor/s3glob/releases/download/v0.4.17/s3glob-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "cb4c1ab18e2c2809f65de2d793d5c8c16b1622efc4ecf5618c9a0fba2b423440"
+      url "https://github.com/quodlibetor/s3glob/releases/download/v0.4.18/s3glob-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "f961b87ab1495f4794bb490dd6284af10706f18fc60bd3ec438ebd9b6b202076"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/quodlibetor/s3glob/releases/download/v0.4.17/s3glob-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "0dd8f2fa93fd698abdbb2039cc6555a69ec7fc21cccaf59384591cb32777dc6f"
+      url "https://github.com/quodlibetor/s3glob/releases/download/v0.4.18/s3glob-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "9431d0dcc3d74ccd6ac3443a907987d7d3b73d33262812c3f1e85dc4c51d7fa5"
     end
   end
   license "MIT, APACHE-2.0"
@@ -50,10 +50,18 @@ class S3glob < Formula
   end
 
   def install
-    bin.install "s3glob" if OS.mac? && Hardware::CPU.arm?
-    bin.install "s3glob" if OS.mac? && Hardware::CPU.intel?
-    bin.install "s3glob" if OS.linux? && Hardware::CPU.arm?
-    bin.install "s3glob" if OS.linux? && Hardware::CPU.intel?
+    if OS.mac? && Hardware::CPU.arm?
+      bin.install "s3glob"
+    end
+    if OS.mac? && Hardware::CPU.intel?
+      bin.install "s3glob"
+    end
+    if OS.linux? && Hardware::CPU.arm?
+      bin.install "s3glob"
+    end
+    if OS.linux? && Hardware::CPU.intel?
+      bin.install "s3glob"
+    end
 
     install_binary_aliases!
 
