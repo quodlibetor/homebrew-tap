@@ -1,25 +1,25 @@
 class Flock < Formula
   desc "Run a command while holding an atomic, OS-managed, death-safe file lock"
   homepage "https://github.com/quodlibetor/flock"
-  version "0.0.4"
+  version "0.0.5"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/quodlibetor/flock/releases/download/v0.0.4/flock-aarch64-apple-darwin.tar.xz"
-      sha256 "0b72370ad2d4e36d4d56231c007102e5b9b2f1f67046a5774c71e6fbfab0aebf"
+      url "https://github.com/quodlibetor/flock/releases/download/v0.0.5/flock-aarch64-apple-darwin.tar.xz"
+      sha256 "cdec8c30371bd9711e873fff24d1296349502fccf4ac7d507bc4d5daf1b792ee"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/quodlibetor/flock/releases/download/v0.0.4/flock-x86_64-apple-darwin.tar.xz"
-      sha256 "d85d3fd4e5791de9c86e13b4e9c0a68114330e586f616a8bdbf399e26eb5283c"
+      url "https://github.com/quodlibetor/flock/releases/download/v0.0.5/flock-x86_64-apple-darwin.tar.xz"
+      sha256 "6367858520e5db3464f55946449637664b024ce3a11931b7021d6e9d21504fc2"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/quodlibetor/flock/releases/download/v0.0.4/flock-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "1246deab4073b83b7e442f5c31d7d8653664053da58cf1a85965991a54721bcc"
+      url "https://github.com/quodlibetor/flock/releases/download/v0.0.5/flock-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "e9e970b442fa4c8e6838dd5f0d143f701f7c7966291935cfdde68b7127b43526"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/quodlibetor/flock/releases/download/v0.0.4/flock-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "c33f001a95b9acc56b200dfa7ae0332caaf5d372f92f76ead9bdb1aa057075ef"
+      url "https://github.com/quodlibetor/flock/releases/download/v0.0.5/flock-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "f59f9972a997d871914766b4423e90c006a0a249a9aaaf4220c0b342bc361bd7"
     end
   end
   license "MIT, APACHE-2.0"
@@ -50,10 +50,18 @@ class Flock < Formula
   end
 
   def install
-    bin.install "flock" if OS.mac? && Hardware::CPU.arm?
-    bin.install "flock" if OS.mac? && Hardware::CPU.intel?
-    bin.install "flock" if OS.linux? && Hardware::CPU.arm?
-    bin.install "flock" if OS.linux? && Hardware::CPU.intel?
+    if OS.mac? && Hardware::CPU.arm?
+      bin.install "flock"
+    end
+    if OS.mac? && Hardware::CPU.intel?
+      bin.install "flock"
+    end
+    if OS.linux? && Hardware::CPU.arm?
+      bin.install "flock"
+    end
+    if OS.linux? && Hardware::CPU.intel?
+      bin.install "flock"
+    end
 
     install_binary_aliases!
 
